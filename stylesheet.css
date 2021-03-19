@@ -4,3 +4,100 @@
     basdebruin.github.io/flex
 
 */ 
+
+:root {
+    font-size: 16px;
+    --fg: #eee;
+    --bg: #333;
+    --font: -apple-system, 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    font-family: var(--font);
+    color: var(--fg);
+    background: var(--bg);
+
+
+    width: 100%;
+    max-width: 50rem;
+    margin: 5rem auto;
+}
+
+* {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 3rem;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    opacity: .7;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+.item {
+    display: block;
+    position: relative;
+    background: rgba(120, 120, 120, .2);
+    border-radius: 0.5rem;
+
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+}
+
+@media (min-width: 40rem) {
+    .item .date {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+}
+
+.item * {
+    margin: 0.7rem 0;
+}
+.item *:first-child { margin-top: 0 }
+.item *:last-child { margin-bottom: 0 }
+
+.item .tag {
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    padding: 0.2rem 0.5rem;
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    background-color: rgba(120, 120, 120, .2);
+    border-radius: 0.3rem;
+}
+
+a, button {
+    transition: all .2s;
+}
+a:hover, button:hover {
+    transform: scale(1.02);
+}
+a:active, button:active {
+    transform: scale(0.98);
+}
+
+p {
+    margin-top: 3rem;
+}
+p a {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
